@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="alishirani">
+    <title>DRUM KIT</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="message">
+        <h2>🖐Hey,for getting started <br> turn up the volume <br>and then push the keys.</h2>
+        <div class="keyboard">
+        <img src="keys\a-key.png" alt="a-key">
+        <img src="keys/s-key.png" alt="s-key">
+        <img src="keys/d-key.png" alt="d-key">
+        <img src="keys/f-key.png" alt="f-key">
+        </div>
+    </div>
+    <img class="sound-i" src="icon.gif"/>
+    <div class="keys">
+        <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">KICK</span>
+        </div>
+        <div data-key="83" class="key">
+            <kbd>S</kbd>
+            <span class="sound">SNARE</span>
+        </div>
+        <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">RIMSHOT</span>
+        </div>
+        <div data-key="70" class="key">
+            <kbd>F</kbd>
+            <span class="sound">PEDAL</span>
+        </div>
+    </div>
+    <audio data-key="65" src="drum/16[kb]new-kick-7.wav.mp3"></audio>
+    <audio data-key="83" src="drum/35[kb]mc-snare-4b.wav.mp3"></audio>
+    <audio data-key="68" src="drum/40[kb]emt-rimshot.wav.mp3"></audio>
+    <audio data-key="70" src="drum/9[kb]hihat-pedal.wav.mp3"></audio>
+    <script src="main.js"></script>
+</body>
+</html>

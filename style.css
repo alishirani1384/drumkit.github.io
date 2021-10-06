@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-image: url(backg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+h2{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+}
+.keyboard{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.keys{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.key{
+    width: 100px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.432);
+    margin: 0 30px;
+    color: black;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: all 0.07s;
+}
+.sound{
+    text-align: center;
+    color:yellow;
+    font-size: 0.8rem;
+    display: block;
+    font-weight: 400;
+}
+.playing{
+    transform: scale(1.1);
+    border-color: blueviolet;
+    box-shadow: 0 0 10px blueviolet;
+}
+.sound-i{
+    position: absolute;
+    border-radius: 50%;
+    width: 80px;
+    bottom: 10%;
+    left: 1%;
+
+}
+@media screen and (max-width:600px) {
+    .key{
+        width: 70px;
+        margin: 0 10px;
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+    .sound{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    .sound-i{
+        width: 50px;
+        bottom: 5%;
+    }
+    h2{
+        font-size: 1rem;
+        line-break: 600px;
+        
+    }
+    
+
+    
+}
